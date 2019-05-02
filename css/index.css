@@ -202,9 +202,29 @@ nav a {
 }
 header {
   display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  border-bottom: 2px dashed #C0C0C0;
+}
+header .header-content {
+  display: flex;
   justify-content: space-between;
   align-items: center;
   flex-direction: row;
+  width: 58%;
+}
+.home #cover-image {
+  background: #fff url('../img/fun-bus.jpg') center center no-repeat;
+  color: white;
+  height: 42vh;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  padding: 1.4rem;
+}
+.home .header-text {
+  margin: 2.5rem auto;
   border-bottom: 2px dashed #C0C0C0;
 }
 .home .content-section {
