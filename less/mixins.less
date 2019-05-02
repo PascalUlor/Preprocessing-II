@@ -1,1 +1,15 @@
 // Mixins in here
+.flex-style(@justifyContent, @alignItems, @direction) {
+    display: flex;
+    justify-content: @justifyContent;
+    align-items: @alignItems;
+    flex-direction: @direction;
+}
+
+.padding-styles(@value) {
+    padding: @value;
+}
+
+.borderStyles(@Weight, @Style, @Color){
+    border-bottom: @Weight @Style @Color;
+}
