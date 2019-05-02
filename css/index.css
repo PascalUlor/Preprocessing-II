@@ -176,6 +176,11 @@ img {
   width: 100%;
   margin: 0 auto;
 }
+@media (max-width: 550px) {
+  .container {
+    padding: 0 2rem;
+  }
+}
 nav {
   display: flex;
   justify-content: space-between;
@@ -214,6 +219,14 @@ header .header-content {
   flex-direction: row;
   width: 58%;
 }
+@media (max-width: 550px) {
+  header .header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+  }
+}
 .home #cover-image {
   background: #fff url('../img/fun-bus.jpg') center center no-repeat;
   color: white;
@@ -233,13 +246,31 @@ header .header-content {
   flex-wrap: wrap;
   justify-content: space-between;
 }
+@media (max-width: 550px) {
+  .home .content-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+}
 .home .content-section .text-content {
   width: 48%;
   padding-right: 1%;
 }
+@media (max-width: 550px) {
+  .home .content-section .text-content {
+    width: 100%;
+  }
+}
 .home .content-section .img-content {
   width: 48%;
   padding-left: 1%;
+}
+@media (max-width: 550px) {
+  .home .content-section .img-content {
+    width: 100%;
+  }
 }
 .home .content-section .img-content img {
   border-radius: 10px;
@@ -247,6 +278,14 @@ header .header-content {
 .home .inverse-content {
   padding-bottom: 30px;
   border-bottom: 2px dashed #C0C0C0;
+}
+@media (max-width: 550px) {
+  .home .inverse-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
 }
 .home .inverse-content .text-content {
   padding-left: 1%;
@@ -268,6 +307,14 @@ header .header-content {
   border-top: 2px dashed #C0C0C0;
   display: flex;
   justify-content: space-between;
+}
+@media (max-width: 550px) {
+  .home .content-pick {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
 }
 .home .content-pick .destination {
   width: 30%;
