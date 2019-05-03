@@ -1,21 +1,75 @@
-.home {
 
+
+  header {
+    .flex-style(center, center, row);
+    .bottomBorderStyles(2px, dashed, #C0C0C0);
+    // margin: 0 5rem;
+    .header-content {
+      .flex-style(space-between, center, row);
+      width: 58%;
+      @media @mobile {
+        .flex-style(space-between, center, column);
+      }
+    }
+  }
+
+  /*Image styles*/
+.img-zoom {
+  position: relative;
+  overflow: hidden;
+  &:hover img {
+    cursor: pointer;
+    transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+  }
+  img {
+    transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+  }
+}
+
+
+  
+.home {
+  #cover-image {
+    background: #fff url('../img/fun-bus.jpg') center center no-repeat;
+    color: white;
+    height: 42vh;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    padding: 1.4rem;
+  }
+  .header-text {
+    margin: 2.5rem auto;
+    .bottomBorderStyles(2px, dashed, #C0C0C0);
+  }
   .content-section {
     margin: 30px 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-
+    @media @mobile {
+      .flex-style(center, center, column);
+    }
    
     
     .text-content {
       width: 48%;
       padding-right: 1%;
+      @media @mobile {
+        width: 100%;
+      }
     }
 
     .img-content {
       width: 48%;
       padding-left: 1%;
+      @media @mobile {
+        width: 100%;
+      }
 
       img {
         border-radius: 10px;
@@ -26,10 +80,16 @@
   .inverse-content {
     padding-bottom: 30px;
     border-bottom: 2px dashed @navigation-border;
+    @media @mobile {
+      .flex-style(center, center, column);
+    }
 
     .text-content {
       padding-left: 1%;
       padding-right: 0;
+      @media @mobile {
+        margin-top: 2rem;
+      }
     }
 
     .img-content {
@@ -41,6 +101,9 @@
   .content-destination {
     width: 75%;
     margin: 0 auto 30px;
+    @media @mobile {
+      width: 100%;
+    }
 
     img {
       border-radius: 10px;
@@ -52,10 +115,17 @@
     border-top: 2px dashed @navigation-border;
     display: flex;
     justify-content: space-between;
+    @media @mobile {
+      .flex-style(center, center, column);
+      width: 100%;
+    }
 
     .destination {
       width: 30%;
       margin-bottom: 30px;
+      @media @mobile {
+        width: 100%;
+      }
     }
   }
 }// home
